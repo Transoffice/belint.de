@@ -1,0 +1,97 @@
+﻿/*------------------------------------------------
+Copyright © Microsoft Corporation. All rights reserved
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-------------------------------------------------*/
+img {
+    border: none;
+}
+
+a {
+	-webkit-transition: all 0.2s ease-out;
+  	-moz-transition: all 0.2s ease-out;
+  	-ms-transition: all 0.2s ease-out;
+  	-o-transition: all 0.2s ease-out;
+  	transition: all 0.2s ease-out;
+}
+
+    a:hover {
+        color: #0073ff;
+    }
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 1000px;
+    width: 100%;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    background: linear-gradient(top, #f0f6fc 0%, #b8c7d9 50%, #b8c7d9 100%);
+    background: -moz-linear-gradient(top, #f0f6fc 0%, #b8c7d9 50%, #b8c7d9 100%); 
+    background: -o-linear-gradient(top, #f0f6fc 0%, #b8c7d9 50%, #b8c7d9 100%);
+    background: -webkit-linear-gradient(top, #f0f6fc 0%, #b8c7d9 50%, #b8c7d9 100%); 
+    background: -ms-linear-gradient(top, #f0f6fc 0%, #b8c7d9 50%, #b8c7d9 100%);
+}
+
+.container {
+	width: 1000px;
+    height: 1000px;
+	margin: 0 auto;
+    background: linear-gradient(top, #f0f6fc 0%, #b8c7d9 100%);
+    background: -moz-linear-gradient(top, #f0f6fc 0%, #b8c7d9 100%); 
+    background: -o-linear-gradient(top, #f0f6fc 0%, #b8c7d9 100%);
+    background: -webkit-linear-gradient(top, #f0f6fc 0%, #b8c7d9 100%); 
+    background: -ms-linear-gradient(top, #f0f6fc 0%, #b8c7d9 100%);
+    box-shadow: 0 0 50px #b8c7d9;
+    -webkit-box-shadow: 0 0 50px #b8c7d9;
+    -moz-box-shadow: 0 0 50px #b8c7d9;
+}
+
+header {
+    width: 1000px;
+    height: 120px;
+    box-shadow: 0 20px 30px -30px #b8c7d9;
+    -webkit-box-shadow: 0 20px 30px -30px #b8c7d9;
+    -moz-box-shadow: 0 20px 30px -30px #b8c7d9;
+}
+
+#logo {
+    margin-left: 60px;
+    margin-top: 40px;
+    float: left;
+}
+
+nav {
+	display: inline-block;
+    position: absolute;
+    left: 50%;
+}
+
+nav ul li {
+    display: inline-block;
+	position: relative;
+    text-align: center;
+	line-height: normal;
+	vertical-align: top;
+}
+
+nav ul li a {
+	display: block;
+    font-size: 14px;
+    font-weight: bold;
+	text-decoration: none;
+	color: #003a80;
+	margin-top: 33px;
+}
+
+.spacer {
+    margin: 40px 10px 0 10px;
+}
