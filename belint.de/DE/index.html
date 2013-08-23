@@ -19,24 +19,43 @@ limitations under the License.
 <head>
     <title>BELINTERTRANS-GERMANY GmbH</title>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/slideshow.css" />
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="index.html"><img src="img/logo.png" alt="Site Logo" id="logo" /></a>
+            <a href="index.html"><img src="../img/logo.png" alt="Site Logo" id="logo" /></a>
             <nav>
             	<ul>
                     <li><a href="#">Startseite</a></li>
-                    <li><img alt src="img/spacer.png" class="spacer"/></li>
+                    <li><img alt src="../img/spacer.png" class="spacer"/></li>
                     <li><a href="#">Kontakt</a></li>
-                    <li><img alt src="img/spacer.png" class="spacer"/></li>
+                    <li><img alt src="../img/spacer.png" class="spacer"/></li>
                     <li><a href="#">Impressum</a></li>
                 </ul>
 			</nav>
         </header>
         <section>
-            <img alt src="img/sample1.png" id="gallery"/>
+            <div class="slideshow" data-transition="crossfade" data-loop="true" data-skip="false">
+				<ul class="carousel">
+					<li class="slide">
+						<img src="../img/slideshow1.jpg" alt="" width="880" height="275" />
+					</li>
+					<li class="slide">
+						<img src="../img/slideshow2.jpg" alt="" width="880" height="275" />
+					</li>
+					<li class="slide">
+						<img src="../img/slideshow3.jpg" alt="" width="880" height="275" />
+					</li>
+                    <li class="slide">
+						<img src="../img/slideshow4.jpg" alt="" width="880" height="275" />
+					</li>
+                    <li class="slide">
+						<img src="../img/slideshow5.jpg" alt="" width="880" height="275" />
+					</li>
+				</ul>
+			</div>
             <h2>Willkommen bei der Belintertrans-Germany GmbH</h2>
             <p>„Belintertrans - Transport-Logistik-Zentrum“ ein staatliches Unternehmen der Belorussischen Eisenbahn (BTLZ) hat in September 2012 die <b>Belintertrans-Germany GmbH</b> in Deutschland gegründet.</p>
             <p>Die BTLZ bietet ihren Kunden jegliche speditionelle Tätigkeiten in den Gebieten Weißrussland und den GUS-Staaten bis hin nach China an.</p>
@@ -53,12 +72,32 @@ limitations under the License.
         <footer>
           <ul>
             <li><a href="#">Deutsch</a></li>
-            <li><img alt src="img/spacer.png" class="spacer"/></li>
+            <li><img alt src="../img/spacer.png" class="spacer"/></li>
             <li><a href="#">English</a></li>
-            <li><img alt src="img/spacer.png" class="spacer"/></li>
-            <li><a href="#">Русский</a></li>
+            <li><img alt src="../img/spacer.png" class="spacer"/></li>
+            <li><a href="../RU/index.html">Русский</a></li>
           </ul>
         </footer>
     </div>
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="../lib/slideshow.js"></script>
+	<script>
+		$(function()
+		{
+			// Create slideshow instances
+			var $s = $('.slideshow').slides();
+
+			// Access an instance API
+			var api = $s.eq(0).data('slides');
+
+			// Transition select
+			$('select[name=transition]').on('change', function()
+			{
+				api.redraw( this.value );
+			});
+		});
+	</script>
+    
 </body>
 </html>

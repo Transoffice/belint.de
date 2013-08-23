@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<!--
+Copyright © Microsoft Corporation. All rights reserved
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<html>
+<head>
+    <title>BELINTERTRANS-GERMANY GmbH</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/slideshow.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img src="../img/logo.png" alt="Site Logo" id="logo" /></a>
+            <nav>
+            	<ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><img alt src="../img/spacer.png" class="spacer"/></li>
+                    <li><a href="#">Контакт</a></li>
+                    <li><img alt src="../img/spacer.png" class="spacer"/></li>
+                    <li><a href="#">Наши реквизиты</a></li>
+                </ul>
+			</nav>
+        </header>
+        <section>
+            <div class="slideshow" data-transition="crossfade" data-loop="true" data-skip="false">
+				<ul class="carousel">
+					<li class="slide">
+						<img src="../img/slideshow1.jpg" alt="" width="880" height="275" />
+					</li>
+					<li class="slide">
+						<img src="../img/slideshow2.jpg" alt="" width="880" height="275" />
+					</li>
+					<li class="slide">
+						<img src="../img/slideshow3.jpg" alt="" width="880" height="275" />
+					</li>
+                    <li class="slide">
+						<img src="../img/slideshow4.jpg" alt="" width="880" height="275" />
+					</li>
+                    <li class="slide">
+						<img src="../img/slideshow5.jpg" alt="" width="880" height="275" />
+					</li>
+				</ul>
+			</div>
+            <h2>Добро пожаловать в ООО «Белинтертранс–Германия»</h2>
+            <p>Государственное предприятие «Белинтертранс — транспортно–логистический центр» («БТЛЦ») Белорусской железной дороги открыла в сентябре 2012 г. филиал в Германии — <b>ООО «Белинтертранс–Германия».</b></p>
+            <p>Государственное предприятие «БТЛЦ» предлагает клиентам транспортные услуги в Белоруссии, странах СНГ и Китае.</p>
+            <p>Открытие представительства «Белинтертранс-Германия» позволит Европейским клиентам пользоваться транспортно-логистическими услугами белорусской компании без посредников. Мы делаем ставку на быструю коммуникацию, для того чтобы удовлетворить высокие требования Европейского рынка. Наши опытные специалисты, владеющие иностранными языками, доставят ваши грузы по назначению в кратчайшие сроки в целости и сохранности.</p>
+            <p>Владея филиалами, в том числе в стратегически важных пунктах Бресте, Клайпеде, Минске и Москве, компания «Белинтертранс — транспортно–логистический центр» предоставляет следующие услуги:</p>
+            <ul>
+                <li>контейнерные перевозки (собственными и арендованными цистернами, морскими контейнерами и др.) из Европы, стран СНГ, Китая;</li>
+                <li>повагонные и негабаритные перевозки собственными и арендованными вагонами;</li>
+                <li>перевозки собственными грузовиками;</li>
+                <li>проектная логистика.</li>
+            </ul>
+            <p>С нетерпением ждем совместных проектов в ближайшем будущем.</p>
+        </section>
+        <footer>
+          <ul>
+            <li><a href="../DE/index.html">Deutsch</a></li>
+            <li><img alt src="../img/spacer.png" class="spacer"/></li>
+            <li><a href="#">English</a></li>
+            <li><img alt src="../img/spacer.png" class="spacer"/></li>
+            <li><a href="#">Русский</a></li>
+          </ul>
+        </footer>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="../lib/slideshow.js"></script>
+	<script>
+		$(function()
+		{
+			// Create slideshow instances
+			var $s = $('.slideshow').slides();
+
+			// Access an instance API
+			var api = $s.eq(0).data('slides');
+
+			// Transition select
+			$('select[name=transition]').on('change', function()
+			{
+				api.redraw( this.value );
+			});
+		});
+	</script>
+    
+</body>
+</html>
