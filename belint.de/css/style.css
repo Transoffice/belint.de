@@ -16,12 +16,16 @@ img {
     border: none;
 }
 
+ul {
+    padding: 0;
+}
+
 a {
-	-webkit-transition: all 0.2s ease-out;
-  	-moz-transition: all 0.2s ease-out;
-  	-ms-transition: all 0.2s ease-out;
-  	-o-transition: all 0.2s ease-out;
-  	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.3s ease;
+  	-moz-transition: all 0.3s ease;
+  	-ms-transition: all 0.3s ease;
+  	-o-transition: all 0.3s ease;
+  	transition: all 0.3s ease;
 }
 
     a:hover {
@@ -69,22 +73,21 @@ header {
     float: left;
 }
 
-nav {
+nav ul {
 	display: inline-block;
-    position: absolute;
-    left: 50%;
+    float: right;
+    margin-right: 60px;
 }
 
 nav ul li {
     display: inline-block;
-	position: relative;
     text-align: center;
 	line-height: normal;
 	vertical-align: top;
 }
 
 nav ul li a {
-	display: block;
+	display: inline-block;
     font-size: 14px;
     font-weight: bold;
 	text-decoration: none;
@@ -92,6 +95,61 @@ nav ul li a {
 	margin-top: 33px;
 }
 
-.spacer {
-    margin: 40px 10px 0 10px;
+nav .spacer {
+    margin: 40px 20px 0 20px;
+}
+
+#gallery {
+    margin: 60px;
+}
+
+h2 {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 0;
+    color: #666666;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p {
+    margin-left: 60px;
+    margin-right: 60px;
+    color: #666666;
+    font-size: 14px;
+}
+
+b {
+    font-weight: bold;
+}
+
+section ul {
+    color: #666666;
+    font-size: 14px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-left: 40px;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+}
+
+footer ul {
+    display: inline-block;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+	line-height: normal;
+	vertical-align: top;
+}
+
+footer ul li a {
+	display: inline;
+    font-size: 12px;
+	text-decoration: none;
+	color: #003a80;
 }
