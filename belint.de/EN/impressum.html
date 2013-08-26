@@ -23,7 +23,7 @@ limitations under the License.
     <link rel="stylesheet" href="../css/slideshow.css" />
 </head>
 <body>
-    <div class="container">
+    <div class="container" height="100%">
         <header>
             <a href="index.html"><img src="../img/logo.png" alt="Site Logo" id="logo" /></a>
             <nav>
@@ -32,7 +32,7 @@ limitations under the License.
                     <li><img alt src="../img/spacer.png" class="spacer"/></li>
                     <li><a href="kontakt.html">Contact</a></li>
                     <li><img alt src="../img/spacer.png" class="spacer"/></li>
-                    <li><a href="impressum.html">Imprint</a></li>
+                    <li><a href="impressum.html">Impint</a></li>
                 </ul>
 			</nav>
         </header>
@@ -56,48 +56,54 @@ limitations under the License.
 					</li>
 				</ul>
 			</div>
-            <h2>Welcome at Belintertrans-Germany GmbH</h2>
-            <p>"BELINTERTRANS - Transport and Logistic Centre" a national company of the Belarus railway (BTLC) has founded the <b>Belintertrans-Germany GmbH</b> in September 2012 in Germany.</p>
-            <p>The BLTC offers all kinds of forwarding services from the regions of Belarus and the CIS-States up to China.</p>
-            <p>The foundation of Belintertrans-Germany GmbH enables European clients direct purchase
-        of freights and services in the sector of logistics. In order to keep up to the standards of European service we perceive short and efficient communication as one of our top priorities. From this moment on, professional, experienced and multilingual employees are at your service to provide a fast, safe and trouble-free delivery of your goods.</p>
-            <p>With structurised and strategically important subsidiaries in Brest, Klaipeda, Minsk and Moscow, Belintertrans is capable of providing following services for you:</p>
-            <ul>
-                <li>Container transports (Sea containers, Tank containers etc.) from the EU-CIS-China on purchase and rental basis </li>
-                <li>Wagon and heavy transports on purchase and rental basis</li>
-                <li>Trucking with our own fleet</li>
-                <li>Project logistics</li>
-            </ul>
-            <p>We look forward to working with you.</p>
+            <h2>Impressum</h2>
+            <div class="columns">
+                <p class="column">
+                    BELINTERTRANS-GERMANY GmbH<br />
+                    Industriestr. 27 <br />
+                    61381 Friedrichsdorf / Germany<br />
+                    Managing Director: Artur Ballardt
+                </p>
+                <p class="column">
+                    Tel.: +49 6172 / 98 19 18-0<br />
+                    Fax: +49 6172 / 98 19 18-9<br />
+                    Email: <a href="mailto:info@belint.de" title="Email us">info@belint.de</a><br />
+                    Web: <a href="http://www.belint.de">http://www.belint.de</a>
+                </p>
+                <p class="column">
+                    Register Number:<br />
+                    HRB 12382<br />
+                    &nbsp;<br />
+                    &nbsp;
+                </p>
+            </div>
         </section>
         <footer>
           <ul>
-            <li><a href="../DE/index.html">Deutsch</a></li>
+            <li><a href="../DE/impressum.html">Deutsch</a></li>
             <li><img alt src="../img/spacer.png" class="spacer"/></li>
             <li><a href="#">English</a></li>
             <li><img alt src="../img/spacer.png" class="spacer"/></li>
-            <li><a href="../RU/index.html">Русский</a></li>
+            <li><a href="../RU/impressum.html">Русский</a></li>
           </ul>
         </footer>
     </div>
-    
+
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="../lib/slideshow.js"></script>
 	<script>
-		$(function()
-		{
-			// Create slideshow instances
-			var $s = $('.slideshow').slides();
+	    $(function () {
+	        // Create slideshow instances
+	        var $s = $('.slideshow').slides();
 
-			// Access an instance API
-			var api = $s.eq(0).data('slides');
+	        // Access an instance API
+	        var api = $s.eq(0).data('slides');
 
-			// Transition select
-			$('select[name=transition]').on('change', function()
-			{
-				api.redraw( this.value );
-			});
-		});
+	        // Transition select
+	        $('select[name=transition]').on('change', function () {
+	            api.redraw(this.value);
+	        });
+	    });
 	</script>
 </body>
 </html>
