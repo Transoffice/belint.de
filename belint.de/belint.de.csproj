@@ -57,6 +57,11 @@
     <Reference Include="System.EnterpriseServices" />-->
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\slideshow.css" />
+    <Content Include="DE\index.html" />
+    <Content Include="EN\index.html" />
+    <Content Include="lib\slideshow.js" />
+    <Content Include="RU\index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -64,8 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="css\style.css" />
-    <None Include="lib\default.js" />
-    <None Include="index.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
