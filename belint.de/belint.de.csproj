@@ -58,10 +58,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\slideshow.css" />
+    <Content Include="DE\impressum.html" />
     <Content Include="DE\index.html" />
+    <Content Include="DE\kontakt.html" />
+    <Content Include="EN\impressum.html" />
     <Content Include="EN\index.html" />
+    <Content Include="EN\kontakt.html" />
+    <Content Include="index.html" />
+    <Content Include="lib\redirect.js" />
     <Content Include="lib\slideshow.js" />
+    <Content Include="RU\impressum.html" />
     <Content Include="RU\index.html" />
+    <Content Include="RU\kontakt.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
